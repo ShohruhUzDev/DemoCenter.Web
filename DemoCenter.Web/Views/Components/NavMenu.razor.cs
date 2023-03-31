@@ -1,4 +1,4 @@
-namespace DemoCenter.Web.Shared
+namespace DemoCenter.Web.Views.Components
 {
     public partial class NavMenu
     {
