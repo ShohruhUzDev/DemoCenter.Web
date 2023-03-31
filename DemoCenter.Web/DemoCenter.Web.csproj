@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Brokers\" />
-    <Folder Include="Models\Configurations\" />
     <Folder Include="Models\StudentViews\" />
     <Folder Include="Models\Students\" />
     <Folder Include="Models\States\" />
