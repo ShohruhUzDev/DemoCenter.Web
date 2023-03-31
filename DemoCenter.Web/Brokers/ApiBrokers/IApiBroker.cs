@@ -1,6 +1,6 @@
 ﻿namespace DemoCenter.Web.Brokers.ApiBrokers
 {
-    public interface IApiBroker
+    public partial interface IApiBroker
     {
     }
 }
