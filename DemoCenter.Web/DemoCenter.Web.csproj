@@ -14,7 +14,6 @@
     <Folder Include="Models\TeacherViews\" />
     <Folder Include="Models\Teachers\" />
     <Folder Include="Models\UserViews\" />
-    <Folder Include="Models\Users\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
