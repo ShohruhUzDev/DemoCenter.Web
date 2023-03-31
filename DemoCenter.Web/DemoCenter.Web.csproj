@@ -13,6 +13,7 @@
     <Folder Include="Models\Subjects\" />
     <Folder Include="Models\TeacherViews\" />
     <Folder Include="Models\Teachers\" />
+    <Folder Include="Models\userviews\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
