@@ -8,8 +8,16 @@
 
   <ItemGroup>
     <Folder Include="Brokers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
+    <Folder Include="Models\Configurations\" />
+    <Folder Include="Models\StudentViews\" />
+    <Folder Include="Models\Students\" />
+    <Folder Include="Models\States\" />
+    <Folder Include="Models\SubjectViews\" />
+    <Folder Include="Models\Subjects\" />
+    <Folder Include="Models\TeacherViews\" />
+    <Folder Include="Models\Teachers\" />
+    <Folder Include="Models\UserViews\" />
+    <Folder Include="Models\Users\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
