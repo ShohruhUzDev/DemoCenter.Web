@@ -18,4 +18,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RESTFulSense" Version="2.13.0" />
+  </ItemGroup>
+
 </Project>
