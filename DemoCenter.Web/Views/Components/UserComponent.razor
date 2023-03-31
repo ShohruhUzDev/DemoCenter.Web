@@ -1,0 +1,52 @@
+﻿@using DemoCenter.Web.Models.UserViews;
+@using DemoCenter.Web.Views.Bases
+@using PrettyBlazor
+
+<ContainerBase>
+    <TableBase @ref=UsersTable>
+        <thead>
+            <TableRowBase>
+                <TableHeadBase @ref=FirstNameLabelCell
+                               Value=@nameof(UserView.FirstName)/>
+
+                <TableHeadBase @ref=LastNameLabelCell
+                               Value=@nameof(UserView.LastName) /> 
+
+                <TableHeadBase @ref=PhoneNumberLabelCell
+                                Value=@nameof(UserView.PhoneNumber) />
+
+                <TableHeadBase @ref=BirthDateLabelCell
+                               Value=@nameof(UserView.BirthDate) />
+
+                <TableHeadBase @ref=EmailLabelCell
+                               Value=@nameof(UserView.Email) />
+
+                <TableHeadBase @ref=PasswordLabelCell
+                               Value=@nameof(UserView.Password) />
+            </TableRowBase>
+        </thead>
+        <tbody>
+            <Iterations Items="Users" Context="User">
+                <TableRowBase>
+                    <TableCellBase @ref=FirstNameValueCell
+                                    Value=@User.FirstName/>
+
+                    <TableCellBase @ref=LastNameValueCell
+                                   Value=@User.LastName />
+
+                    <TableCellBase @ref=PhoneNumberValueCell
+                                   Value=@User.PhoneNumber />
+
+                    <TableCellBase @ref=BirthDateValueCell
+                                   Value=@User.BirthDate.ToString(format:"dd-MMM (yyyy)") />
+                  
+                     <TableCellBase @ref=EmailValueCell
+                                   Value=@User.Email />
+
+                    <TableCellBase @ref=PasswordValueCell
+                                   Value=@User.Password />
+                </TableRowBase>
+            </Iterations>
+        </tbody>
+    </TableBase>
+</ContainerBase>
