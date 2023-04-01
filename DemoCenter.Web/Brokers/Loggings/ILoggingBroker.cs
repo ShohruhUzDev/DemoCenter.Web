@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Brokers.Loggings
+﻿using System;
+
+namespace DemoCenter.Web.Brokers.Loggings
 {
     public interface ILoggingBroker
     {

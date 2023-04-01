@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Models.SubjectViews
+﻿using System;
+
+namespace DemoCenter.Web.Models.SubjectViews
 {
     public class SubjectView
     {

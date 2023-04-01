@@ -1,4 +1,7 @@
-﻿namespace DemoCenter.Web.Brokers.Loggings
+﻿using System;
+using Microsoft.Extensions.Logging;
+
+namespace DemoCenter.Web.Brokers.Loggings
 {
     public class LoggingBroker : ILoggingBroker
     {

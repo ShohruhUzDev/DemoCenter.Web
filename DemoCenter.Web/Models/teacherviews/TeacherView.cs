@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Models.TeacherViews
+﻿using System;
+
+namespace DemoCenter.Web.Models.TeacherViews
 {
     public class TeacherView
     {

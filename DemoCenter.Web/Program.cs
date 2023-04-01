@@ -4,6 +4,9 @@ using DemoCenter.Web.Brokers.Loggings;
 using DemoCenter.Web.Services.Foundations.Users;
 using DemoCenter.Web.Services.Views.UserViews;
 using FluentAssertions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Syncfusion.Blazor;
 
 namespace DemoCenter

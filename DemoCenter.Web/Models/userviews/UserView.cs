@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Models.UserViews
+﻿using System;
+
+namespace DemoCenter.Web.Models.UserViews
 {
     public class UserView
     {

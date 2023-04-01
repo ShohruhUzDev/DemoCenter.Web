@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Models.Subjects
+﻿using System;
+
+namespace DemoCenter.Web.Models.Subjects
 {
     public class Subject
     {

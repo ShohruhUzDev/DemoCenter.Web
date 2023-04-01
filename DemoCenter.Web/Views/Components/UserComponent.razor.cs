@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DemoCenter.Web.Models.UserViews;
 using DemoCenter.Web.Views.Bases;
 using Microsoft.AspNetCore.Components;

@@ -1,4 +1,6 @@
-﻿namespace DemoCenter.Web.Models.Users
+﻿using System;
+
+namespace DemoCenter.Web.Models.Users
 {
     public class User
     {
