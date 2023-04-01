@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Bases\ButtonBase.razor.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Views\Bases\ButtonBase.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Models\StudentViews\" />
     <Folder Include="Models\Students\" />
     <Folder Include="Models\SubjectViews\" />
