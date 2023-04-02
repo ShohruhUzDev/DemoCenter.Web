@@ -1,0 +1,38 @@
+﻿@using DemoCenter.Web.Models.TeacherViews;
+@using DemoCenter.Web.Models.UserViews;
+@using DemoCenter.Web.Views.Bases
+@using PrettyBlazor
+
+<ContainerBase>
+    <TableBase @ref=TeachersTable>
+        <thead>
+            <TableRowBase>
+                <TableHeadBase @ref=FirstNameLabelCell
+                               Value=@nameof(TeacherView.FirstName) />
+
+                <TableHeadBase @ref=LastNameLabelCell
+                               Value=@nameof(TeacherView.LastName) />
+
+                <TableHeadBase @ref=PhoneNumberLabelCell
+                               Value=@nameof(TeacherView.Phone) />
+>
+            </TableRowBase>
+        </thead>
+        <tbody>
+            <Iterations Items="Teachers" Context="Teacher">
+                <TableRowBase>
+                    <TableCellBase @ref=FirstNameValueCell
+                                   Value=@Teacher.FirstName />
+
+                    <TableCellBase @ref=LastNameValueCell
+                                   Value=@Teacher.LastName />
+
+                    <TableCellBase @ref=PhoneNumberValueCell
+                                   Value=@Teacher.Phone />
+
+                  
+                </TableRowBase>
+            </Iterations>
+        </tbody>
+    </TableBase>
+</ContainerBase>

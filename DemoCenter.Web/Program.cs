@@ -1,9 +1,10 @@
 using DemoCenter.Web.Brokers.ApiBrokers;
 using DemoCenter.Web.Brokers.DateTimes;
 using DemoCenter.Web.Brokers.Loggings;
+using DemoCenter.Web.Services.Foundations.Teachers;
 using DemoCenter.Web.Services.Foundations.Users;
+using DemoCenter.Web.Services.Views.TeacherViews;
 using DemoCenter.Web.Services.Views.UserViews;
-using FluentAssertions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -20,7 +21,7 @@ namespace DemoCenter
             builder.Services.AddRazorPages(options =>
                 options.RootDirectory = "/Views/Pages");
 
-        
+
             builder.Services.AddSyncfusionBlazor();
             builder.Services.AddHttpClient();
             builder.Services.AddServerSideBlazor();
@@ -48,12 +49,14 @@ namespace DemoCenter
         {
 
             builder.Services.AddTransient<IUserService, UserService>();
+            builder.Services.AddTransient<ITeacherService, TeacherService>();
         }
 
         private static void AddViewServices(WebApplicationBuilder builder)
         {
 
             builder.Services.AddTransient<IUserViewService, UserViewService>();
+            builder.Services.AddTransient<ITeacherViewService, TeacherViewService>();
         }
 
         private static void AddBrokers(WebApplicationBuilder builder)
