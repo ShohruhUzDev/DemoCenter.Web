@@ -10,7 +10,7 @@ using DemoCenter.Web.Services.Foundations.Teachers;
 
 namespace DemoCenter.Web.Services.Views.TeacherViews
 {
-    public class TeacherViewService
+    public class TeacherViewService :ITeacherViewService
     {
         private readonly ITeacherService teacherService;
         private readonly IDateTimeBroker dateTimeBroker;
